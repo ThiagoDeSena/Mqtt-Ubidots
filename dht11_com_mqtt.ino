@@ -6,19 +6,19 @@
 #include <WiFi.h>
 #include <PubSubClient.h> //Biblioteca para as publicações via mqtt
 
-#define WIFISSID "ifce-espacoMaker" //Coloque seu SSID de WiFi aqui
-#define PASSWORD "CR1AT1V1UM" //Coloque seu password de WiFi aqui
-#define TOKEN "BBUS-GEAtmIzZ1sMrBcAwZh9OyiLpXqTRG1" //Coloque seu TOKEN do Ubidots aqui
+#define WIFISSID "rede Wifi" //Coloque seu SSID de WiFi aqui
+#define PASSWORD "senha da Rede Wifi" //Coloque seu password de WiFi aqui
+#define TOKEN "Token do Ubidots" //Coloque seu TOKEN do Ubidots aqui
 #define VARIABLE_LABEL_TEMPERATURE "temperature" //Label referente a variável de temperatura criada no ubidots
 #define VARIABLE_LABEL_HUMIDITY "humidity" //Label referente a variável de umidade criada no ubidots
-#define DEVICE_ID "66f1af28986f11cd46d83705" //ID do dispositivo (Device id, também chamado de client name)
+#define DEVICE_ID "ID do Device do Ubidots" //ID do dispositivo (Device id, também chamado de client name)
 #define SERVER "things.ubidots.com" //Servidor do Ubidots (broker)
 
 //Porta padrão
 #define PORT 1883
 
 //Tópico aonde serão feitos os publish, "esp32-dht" é o DEVICE_LABEL
-#define TOPIC "/v1.6/devices/esp32-kincony"
+#define TOPIC "/v1.6/devices/endereço do seu Device"
 
 //Objeto WiFiClient usado para a conexão wifi
 WiFiClient ubidots;
